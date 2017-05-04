@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="KSUCornerDBModel12StoreContainer" CdmEntityContainer="KSUCornerDBEntities12">
+    <EntitySetMapping Name="RestrictedAccounts">
+      <EntityTypeMapping TypeName="KSUCornerDBModel12.RestrictedAccount">
+        <MappingFragment StoreEntitySet="RestrictedAccount">
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="AccessMask" ColumnName="AccessMask" />
+          <ScalarProperty Name="AccessIssues" ColumnName="AccessIssues" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

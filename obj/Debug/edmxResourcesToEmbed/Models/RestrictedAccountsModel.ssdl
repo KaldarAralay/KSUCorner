@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KSUCornerDBModel12.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="RestrictedAccount">
+    <Key>
+      <PropertyRef Name="AccountID" />
+    </Key>
+    <Property Name="AccountID" Type="int" Nullable="false" />
+    <Property Name="AccessMask" Type="int" Nullable="false" />
+    <Property Name="AccessIssues" Type="nvarchar" MaxLength="1000" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="KSUCornerDBModel12StoreContainer">
+    <EntitySet Name="RestrictedAccount" EntityType="Self.RestrictedAccount" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
